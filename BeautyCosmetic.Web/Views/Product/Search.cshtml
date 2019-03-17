@@ -1,0 +1,408 @@
+﻿@model BeautyCosmetic.Web.Infrastructure.Core.PaginationSet<BeautyCosmetic.Web.Models.ProductViewModel>
+
+
+@{
+    var keyword = (string)ViewBag.Keyword;
+    ViewBag.Title = "Kết quả tìm kiếm cho từ khóa " + keyword;
+    ViewBag.MetaKeyword = "Kết quả tìm kiếm cho từ khóa " + keyword;
+    ViewBag.MetaDescription = "Kết quả tìm kiếm cho từ khóa " + keyword;
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+
+<!-- inner banner -->
+<div class="ibanner_w3 pt-sm-5 pt-3">
+
+</div>
+<!-- //inner banner -->
+<!-- breadcrumbs -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item active" h aria-current="page">Kết quả tìm kiếm: @keyword - <span>(@Model.TotalCount sản phẩm)</span></li>
+    </ol>
+</nav>
+<!-- //breadcrumbs -->
+<!-- Shop -->
+<div class="innerf-pages section">
+    <div class="fh-container mx-auto">
+        <div class="row my-lg-5 mb-5">
+            <!-- grid left -->
+            <div class="side-bar col-lg-3">
+                <!--preference -->
+                <div class="left-side">
+                    <h3 class="shopf-sear-headits-sear-head">
+                        Categories
+                    </h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checked" name="cat1" id="cat1">
+                            <label for="cat1">Fashion</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="cat2" id="cat2">
+                            <label for="cat2">Popular</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="cat3" id="cat3">
+                            <label for="cat3">Trending</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="cat4" id="cat4">
+                            <label for="cat4">Sort by popularity</label>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- // preference -->
+                <div class="search-hotel">
+                    <h3 class="shopf-sear-headits-sear-head">
+                        <span>Brand</span> in focus
+                    </h3>
+                    <form action="#" method="post">
+                        <input type="search" placeholder="search here" name="search" required="">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                <!-- price range -->
+                <div class="range">
+                    <h3 class="shopf-sear-headits-sear-head">
+                        <span>Price</span> range
+                    </h3>
+                    <ul class="dropdown-menu6">
+                        <li>
+
+                            <div id="slider-range"></div>
+                            <input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+                        </li>
+                    </ul>
+                </div>
+                <!-- //price range -->
+                <!--preference -->
+                <div class="left-side">
+                    <h3 class="shopf-sear-headits-sear-head">
+                        <span>latest</span> arrivals
+                    </h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checked" name="arr1" id="arr1">
+                            <label for="arr1">last 30 days</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="arr2" id="arr2">
+                            <label for="arr2">last 90 days</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="arr3" id="arr3">
+                            <label for="arr3">last 150 days</label>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- // preference -->
+                <!-- discounts -->
+                <div class="left-side">
+                    <h3 class="shopf-sear-headits-sear-head">Sizes</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checked" name="size1" id="size1">
+                            <label for="size1">XS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size2" id="size2">
+                            <label for="size2">S</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size3" id="size3">
+                            <label for="size3">M</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size4" id="size4">
+                            <label for="size4">L</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size5" id="size5">
+                            <label for="size5">XL</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size6" id="size6">
+                            <label for="size6">XXL</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="size7" id="size7">
+                            <label for="size7">XXXL</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //discounts -->
+                <!-- Binding -->
+                <div class="left-side">
+                    <h3 class="shopf-sear-headits-sear-head">Color</h3>
+                    <div class="d-flex">
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checked" name="color1" id="color1">
+                                <label for="color1">Black</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color2" id="color2">
+                                <label for="color2">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color3" id="color3">
+                                <label for="color3">Red</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color4" id="color4">
+                                <label for="color4">Yellow</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color5" id="color5">
+                                <label for="color5">White</label>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="checked" name="color6" id="color6">
+                                <label for="color6">Green</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color7" id="color7">
+                                <label for="color7">Multi</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color8" id="color8">
+                                <label for="color8">Purple</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color9" id="color9">
+                                <label for="color9">Gold</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="checked" name="color10" id="color10">
+                                <label for="color10">Orange</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //Binding -->
+                <!-- discounts -->
+                <div class="left-side">
+                    <h3 class="shopf-sear-headits-sear-head">Discount</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" class="checked" name="dis1" id="dis1">
+                            <label for="dis1">5% - 20%</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="dis2" id="dis2">
+                            <label for="dis2">20% - 40%</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="dis3" name="dis3" id="dis3">
+                            <label for="dis3">40% - 60%</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checked" name="dis4" id="dis4">
+                            <label for="dis4">60% or more</label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //discounts -->
+                <!-- reviews -->
+                <div class="customer-rev left-side">
+                    <h3 class="shopf-sear-headits-sear-head">Customer Review</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>5.0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>4.0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>3.5</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>3.0</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>2.5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //reviews -->
+            </div>
+            <!-- //grid left -->
+            @if (Model.Count > 0)
+            {
+                <!-- grid right -->
+                <div class="col-lg-9 mt-lg-0 mt-5 right-product-grid">
+                    <!-- card group  -->
+                    <div class="toolbar-products toolbar-top" style="display:flex;margin-bottom:20px; border-bottom: 1px solid #eee;">
+                        <h1 id="categoryfont">kết_Quả</h1>
+                        <div class="btn-group btn_group_custom hidden-xs" style="margin-left: 51%;">
+                            <a class="btn btn-default btn_new fa fa-sort moivedesc activeSort" href="?page=@Model.Page&sort=new" style="font-size:13px;">Mới về</a>
+                            <a class="btn btn-default btn_new fa fa-sort giadesc" href="?page=@Model.Page&sort=price" style="font-size:13px;">Giá(thấp->cao)</a>
+                            <a class="btn btn-default btn_new fa fa-sort danhgiadesc" href="?page=@Model.Page&sort=discount" style="font-size:13px;">Kuyến mãi</a>
+                            <a class="btn btn-default border_last btn_new fa fa-sort muanhieudesc" href="?page=@Model.Page&sort=popular" style="font-size:13px;">phổ biến</a>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        @foreach (var product in Model.Items)
+                        {
+                            var url = "/" + product.Alias + "_p-" + product.ID;
+                            <!-- card -->
+                            <div class="col-lg-3 col-sm-6 p-0" style="margin-bottom:20px;">
+                                <div class="card product-men p-3" style="@(product.HomeFlag != true ? "opacity: 0.6;" : "")">
+                                    <div class="men-thumb-item">
+                                        <img src="@product.Image" alt="img" class="card-img-top">
+                                        @if (@product.HomeFlag == true)
+                                        {
+                                            <div class="men-cart-pro">
+                                                <div class="inner-men-cart-pro">
+                                                    <a href="@url" class="link-product-add-cart">Xem ngay</a>
+                                                </div>
+                                            </div>
+                                        }
+                                        else
+                                        { <span class="px-2 position-absolute">out of stock</span>}
+                                    </div>
+
+                                    <!-- card body -->
+                                    <div class="card-body  py-3 px-2">
+                                        <h5 class="card-title text-capitalize">@product.Name</h5>
+                                        <div class="card-text d-flex justify-content-between">
+                                            @if (@product.PromotionPrice != null)
+                                            {
+                                                <p class="text-dark font-weight-bold">@product.PromotionPrice.Value.ToString("N0") đ</p>
+                                                <p class="line-through">@product.Price.ToString("N0")</p>
+                                            }
+                                            else
+                                            {
+                                                <p class="text-dark font-weight-bold">@product.Price.ToString("N0") đ</p>
+                                                <p class="line-through"></p>
+                                            }
+
+                                        </div>
+                                    </div>
+                                    <!-- card footer -->
+                                    <div class="card-footer d-flex justify-content-end">
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="hub_item" value="@product.Name">
+                                            @if (product.PromotionPrice != null)
+                                            {<input type="hidden" name="amount" value="@product.PromotionPrice.Value.ToString("N0")"> }
+                                            else
+                                            { <input type="hidden" name="amount" value="@product.Price.ToString("N0")">}
+                                              <a class="btn mt-1" href="/gio-hang_html" role="button" style="margin-top:34px!important; background-color: #b0f9b6;">
+                                                  <i class="fas fa-shopping-bag" style="color:#00a65a;"></i>
+                                              </a>
+                                            @*<a href="#" data-toggle="modal" data-target="#myModal1"></a>*@
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //card -->
+                        }
+                    </div>
+                    <div class="clearfix"></div>
+                    @if (Model.TotalPages > 1)
+                    {
+                        // Create numeric links
+                        var startPageIndex = Math.Max(1, Model.Page - Model.MaxPage / 2);
+                        var endPageIndex = Math.Min(Model.TotalPages, Model.Page + Model.MaxPage / 2);
+
+                        <nav aria-label="Page navigation" style="margin-top:20px;border-top: 1px solid #eee; width:100%">
+                            <ul class="pagination" style="float:right">
+                                @if (Model.Page > 1)
+                                {
+                                    <li>
+                                        <a href="?page=1" aria-label="First" id="pabtigatiuon">
+                                            <i class="fa fa-angle-double-left"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="?page=@(Model.Page-1)" id="pabtigatiuon" aria-label="Previous">
+                                            <i class="fa fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                }
+
+                                @for (int i = startPageIndex; i <= endPageIndex; i++)
+                                {
+                                    if (Model.Page == i)
+                                    {
+                                        <li class="active"><a href="?page=@i" id="pabtigatiuon" style="color:#fff;background-color:#00a65a;" title="Trang @i">@i</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a id="pabtigatiuon" href="?page=@i" title="Trang @i">@i</a></li>
+                                    }
+                                }
+                                @if (Model.Page < Model.TotalPages)
+                                {
+                                    <li>
+                                        <a href="?page=@(Model.Page+1)" id="pabtigatiuon" aria-label="Next">
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="?page=@Model.TotalPages" id="pabtigatiuon" aria-label="Last">
+                                            <i class="fa fa-angle-double-right"></i>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </nav>
+                    }
+                    <!-- //card group 1-->
+
+                </div>
+            }
+
+            else
+            {
+                <div class="text-center">Không có bản ghi nào được tìm thấy.</div>
+            }
+        </div>
+    </div>
+</div>
+<!--// Shop -->

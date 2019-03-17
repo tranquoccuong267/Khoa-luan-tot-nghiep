@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.Common", "BeautyCosmetic.Common\BeautyCosmetic.Common.csproj", "{9DAA336C-313D-4BAE-A3BE-8FA82961CB63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.Data", "BeautyCosmetic.Data\BeautyCosmetic.Data.csproj", "{AE5DB53D-8B9A-4929-8E21-A5CE601EBD6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.Model", "BeautyCosmetic.Model\BeautyCosmetic.Model.csproj", "{BDBCE984-44F2-426D-BA0C-7E636CCF8326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.Service", "BeautyCosmetic.Service\BeautyCosmetic.Service.csproj", "{F1D722A4-B77C-4487-AB64-C0921CB48143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.UnitTest", "BeautyCosmetic.UnitTest\BeautyCosmetic.UnitTest.csproj", "{9D4D7241-1991-4B4A-9D6B-DCB6FE32C6B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautyCosmetic.Web", "BeautyCosmetic.Web\BeautyCosmetic.Web.csproj", "{0100800F-F15D-4910-AF40-EBB87B43D978}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DAA336C-313D-4BAE-A3BE-8FA82961CB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAA336C-313D-4BAE-A3BE-8FA82961CB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAA336C-313D-4BAE-A3BE-8FA82961CB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAA336C-313D-4BAE-A3BE-8FA82961CB63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5DB53D-8B9A-4929-8E21-A5CE601EBD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5DB53D-8B9A-4929-8E21-A5CE601EBD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5DB53D-8B9A-4929-8E21-A5CE601EBD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5DB53D-8B9A-4929-8E21-A5CE601EBD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDBCE984-44F2-426D-BA0C-7E636CCF8326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDBCE984-44F2-426D-BA0C-7E636CCF8326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDBCE984-44F2-426D-BA0C-7E636CCF8326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDBCE984-44F2-426D-BA0C-7E636CCF8326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D722A4-B77C-4487-AB64-C0921CB48143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D722A4-B77C-4487-AB64-C0921CB48143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D722A4-B77C-4487-AB64-C0921CB48143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D722A4-B77C-4487-AB64-C0921CB48143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4D7241-1991-4B4A-9D6B-DCB6FE32C6B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4D7241-1991-4B4A-9D6B-DCB6FE32C6B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4D7241-1991-4B4A-9D6B-DCB6FE32C6B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4D7241-1991-4B4A-9D6B-DCB6FE32C6B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0100800F-F15D-4910-AF40-EBB87B43D978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0100800F-F15D-4910-AF40-EBB87B43D978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0100800F-F15D-4910-AF40-EBB87B43D978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0100800F-F15D-4910-AF40-EBB87B43D978}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F1A2562-15E5-4D64-95DC-29CB63D3EEDB}
+	EndGlobalSection
+EndGlobal

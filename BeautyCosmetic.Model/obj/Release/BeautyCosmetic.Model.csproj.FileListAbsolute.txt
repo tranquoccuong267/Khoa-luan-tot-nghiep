@@ -1,0 +1,16 @@
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\BeautyCosmetic.Model.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\BeautyCosmetic.Model.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\EntityFramework.SqlServer.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\EntityFramework.SqlServer.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Release\BeautyCosmetic.Model.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Release\BeautyCosmetic.Model.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Release\BeautyCosmetic.Model.csproj.CopyComplete
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Release\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Release\BeautyCosmetic.Model.pdb

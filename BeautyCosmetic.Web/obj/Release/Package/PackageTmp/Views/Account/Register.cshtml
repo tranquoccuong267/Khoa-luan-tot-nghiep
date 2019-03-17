@@ -1,0 +1,215 @@
+﻿@model BeautyCosmetic.Web.Models.RegisterViewModel
+
+@using BotDetect.Web.Mvc;
+@{
+                /**/
+
+                ViewBag.Title = "Register";
+                Layout = "~/Views/Shared/Layouts.cshtml";
+
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang Chủ</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Đăng Ký</li>
+    </ol>
+</nav>
+<div class="agilemodal-dialog modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header" style="margin: 0 auto;">
+            <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
+        </div>
+        <div class="modal-body  pt-3 pb-5 px-sm-5">
+            <div class="row">
+                @*<div class="col-md-6 align-self-center">
+                        <img src="~/Assets/client/images/p3.png" class="img-fluid" alt="login_image" />
+                    </div>*@
+                <div class="col-md-6" style="margin: 0 auto; margin-top:10px;">
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "form-signup", @class = "active" }))
+                    {
+                        //ngăn chặn việc submit liên tục
+                        @Html.AntiForgeryToken();
+                        @Html.ValidationSummary(false, "", new { @class = "error" })
+                        if (ViewData["SuccessMsg"] != null)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                <strong>Chúc mừng bạn! </strong> đã đăng ký thành công.
+                                <br />Vui lòng click <a href="/dang-nhap_html">vào đây </a>để đăng nhập.
+                            </div>
+                        }
+
+                            <div>
+                                <div class="form-group">
+                                    <label  style="text-align: right;" for="recipient-name" class="col-form-label">Họ & Tên<span style="color: red;"> (*)</span></label>
+                                    @Html.TextBoxFor(model => model.FullName, new { style = "width: 77%;    float: right;" })
+                                </div>
+                                <div class="form-group">
+                                    <label style="text-align: right;"  for="email" class="col-form-label">Email<span style="color: red;"> (*)</span></label>
+                                    @Html.TextBoxFor(model => model.Email, new { style = "width: 77%;    float: right;" })
+                                </div>
+                                <div class="form-group">
+                                    <label style="text-align: right;"  for="address" class="col-form-label">Địa Chỉ<span style="color: red;"> (*)</span></label>
+                                    @Html.TextBoxFor(model => model.Address, new { style = "width: 77%;    float: right;" })
+                                </div>
+                                <div class="form-group">
+                                    <label style="text-align: right;" for="phone" class="col-form-label">Số Điện Thoại<span style="color: red;"> (*)</span></label>
+                                    @Html.TextBoxFor(model => model.PhoneNumber, new { style = "width: 77%;    float: right;" })
+                                </div>
+                                <div class="form-group">
+                                    <label style="text-align: right;"  for="username" class="col-form-label">Tài khoản<span style="color: red;"> (*)</span></label>
+                                    @Html.TextBoxFor(model => model.UserName, new { style = "width: 77%;    float: right;" })
+                                </div>
+                                <div class="form-group">
+                                    <label style="text-align: right;"  for="password" class="col-form-label">Password<span style="color: red;"> (*)</span></label>
+                                    @Html.PasswordFor(model => model.Password, new { id = "password1", placeholder = "••••••••", style = "width: 77%;    float: right;" })
+                                </div>
+                                @*<fieldset>
+            <div>
+                <label for="password">Password</label>
+                @Html.PasswordFor(model => model.Password, new { id = "password1", placeholder = "••••••••" })
+            </div>
+        </fieldset>*@
+                                <div class="form-group">
+                                    <label style="text-align: right;" for="repassword" class="col-form-label">Xác nhận Password<span style="color: red;"> (*)</span></label>
+                                    <input style = "width: 70%;    float: right;" id="password2" type="password" placeholder="••••••••" />
+                                </div>
+                     
+                                @*<fieldset>
+                                    <div>
+                                        <label for="repassword">Xác nhận Password</label>
+                                        <input id="password2" type="password" placeholder="••••••••" />
+                                    </div>
+                                </fieldset>*@
+                                @{
+                                    MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+                                }
+                                @Html.Captcha(registerCaptcha)
+                                @Html.TextBox("CaptchaCode")
+                            </div>
+
+                        @*<ul>
+                            <li>
+                                <button class="fb">Connect with Facebook</button>
+                            </li>
+                            <li>
+                                <button class="tw">Connect with Twitter</button>
+                            </li>
+                        </ul>*@
+
+                        <div class="right-w3l">
+                            <input type="submit" style="margin-top:20px" class="form-control" value="Đăng Ký">
+                        </div>
+                    }
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*<main ontouchstart class="with-hover">
+    <section style="background:#fff">
+        <h1>
+            <a id="link-signup" class="active">Đăng ký</a>
+        </h1>
+
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "form-signup", @class = "active" }))
+        {
+            //ngăn chặn việc submit liên tục
+            @Html.AntiForgeryToken();
+            @Html.ValidationSummary(false, "", new { @class = "error" })
+            if (ViewData["SuccessMsg"] != null)
+            {
+                <div class="alert alert-success" role="alert">
+                    <strong>Chúc mừng bạn! </strong> đã đăng ký thành công.
+                    <br />Vui lòng click <a href="/dang-nhap_html">vào đây </a>để đăng nhập.
+                </div>
+            }
+
+            <div>
+                <fieldset>
+                    <div>
+                        <label for="name" style="width: 100px;">Họ & Tên</label>
+                        @Html.TextBoxFor(model => model.FullName)
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="email" style="width: 100px;">Email</label>
+                        @Html.TextBoxFor(model => model.Email)
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="address" style="width: 100px;">Địa chỉ</label>
+                        @Html.TextBoxFor(model => model.Address)
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="phone" style="width: 100px;">Số Điện Thoại</label>
+                        @Html.TextBoxFor(model => model.PhoneNumber)
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="username">Tài khoản</label>
+                        @Html.TextBoxFor(model => model.UserName)
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="password">Password</label>
+                        @Html.PasswordFor(model => model.Password, new { id = "password1", placeholder = "••••••••" })
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="repassword">Xác nhận Password</label>
+                        <input id="password2" type="password" placeholder="••••••••" />
+                    </div>
+                </fieldset>
+                @{
+                    MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+                }
+                @Html.Captcha(registerCaptcha)
+                @Html.TextBox("CaptchaCode")
+            </div>
+
+            <ul>
+                <li>
+                    <button class="fb">Connect with Facebook</button>
+                </li>
+                <li>
+                    <button class="tw">Connect with Twitter</button>
+                </li>
+            </ul>
+
+            <input type="submit" value="Đăng ký">
+        }
+
+    </section>
+</main>*@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="~/Assets/signup/js/index.js"></script>
+<script src="~/Assets/client/js/bootstrap.js"></script>
+<script>
+    window.onload = function () {
+        document.getElementById("password1").onchange = validatePassword;
+        document.getElementById("password2").onchange = validatePassword;
+    }
+
+    function validatePassword() {
+        var pass2 = document.getElementById("password2").value;
+        var pass1 = document.getElementById("password1").value;
+        if (pass1 != pass2)
+            document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+        else
+            document.getElementById("password2").setCustomValidity('');
+        //empty string means no validation error
+    }
+
+</script>
+

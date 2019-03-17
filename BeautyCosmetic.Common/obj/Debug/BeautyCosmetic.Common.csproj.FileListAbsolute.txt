@@ -1,0 +1,12 @@
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\bin\Debug\BeautyCosmetic.Common.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\bin\Debug\BeautyCosmetic.Common.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.csproj.CoreCompileInputs.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\bin\Debug\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\bin\Debug\BeautyCosmetic.Common.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Debug\BeautyCosmetic.Common.pdb

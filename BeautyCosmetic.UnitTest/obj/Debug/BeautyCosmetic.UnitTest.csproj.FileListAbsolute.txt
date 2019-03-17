@@ -1,0 +1,184 @@
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\ApplicationInsights.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Common.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Service.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Optimization.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Mvc.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.WebHost.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Razor.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Net.Http.Formatting.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Newtonsoft.Json.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Common.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Service.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Optimization.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Mvc.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.WebHost.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Razor.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Net.Http.Formatting.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csprojAssemblyReference.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csproj.CoreCompileInputs.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csproj.CopyComplete
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Castle.Core.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.ValueTuple.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Castle.Core.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.ValueTuple.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Owin.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\AutoMapper.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.Mvc.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\AutoMapper.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.Mvc.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BotDetect.Web.Mvc.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BotDetect.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\ApplicationInsights.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.UnitTest.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Service.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Castle.Core.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.ValueTuple.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Mvc.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Optimization.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BotDetect.Web.Mvc.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Owin.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\AutoMapper.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Net.Http.Formatting.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Newtonsoft.Json.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.Owin.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.WebHost.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.Mvc.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Razor.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Razor.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BotDetect.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Common.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Data.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Service.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Service.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\BeautyCosmetic.Web.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Castle.Core.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Moq.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.ValueTuple.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Mvc.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Optimization.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\AutoMapper.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Net.Http.Formatting.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Newtonsoft.Json.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.Owin.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Http.WebHost.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.Mvc.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\Autofac.Integration.WebApi.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Razor.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.Razor.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.csproj.CopyComplete
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.UnitTest\obj\Debug\BeautyCosmetic.UnitTest.pdb

@@ -1,0 +1,21 @@
+ch?nh s?a l?i vi?c sho s?n ph?m 
+_nút xem ngay s? là thêm vào gi?
+_ Ð? l?i ðãng nh?p/ðãng k? c? .
+_ s? ra ðãng nh?p
+_ h?y ðõn hàng
+_ bên admin c?p nh?t tr?ng tháng ðõn hàng
+_ không b?t bu?c mess
+s?n ph?m hot
+theo ...............
+
+//dãng k? thông tin khuy?n m?i
+loc theo gia tien them chon phan trang(phat trien sau)
+tim kiem va sua lai cac duong link
+xem lai viec ko co quyen se hien ra chu ko bat dang nhap lai
+quan li don hang co chinh sua trang thai doi hang
+hien thi thong tin ca nhan ben khach hang
+hien thi danh sach cac don hang da mua
+sau khi dang ky quay l?i trang dang nhap
+
+
+con thoi gian lam them sitemap..hay robot.txt

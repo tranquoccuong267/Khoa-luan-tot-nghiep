@@ -1,0 +1,208 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+<link href="~/Assets/client/css/checkout.css" rel="stylesheet" />
+<style>
+    .check_out {
+        outline: none;
+        padding: 10px 28px;
+        background: #00a65a;
+        font-size: 1.1em;
+        border-radius: 7px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        margin-top: 1em;
+        cursor: pointer;
+    }
+        .check_out:hover {
+            background: #8cd487;
+            color:#000
+        }
+    
+</style>
+@section footerJS{
+    <script src="~/Assets/client/js/controllers/shoppingCart.js"></script>
+}
+<div class="ibanner_w3 pt-sm-5 pt-3">
+    <h4 class="head_agileinfo text-center text-capitalize text-center pt-5">
+        @*<span>B</span>eauty
+            <span>C</span>osmetic*@
+    </h4>
+</div>
+<!-- //inner banner -->
+<!-- breadcrumbs -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang chủ</a>
+        </li>
+        <li class="breadcrumb-item active" h aria-current="page">Giỏ Hàng</li>
+    </ol>
+</nav>
+<section class="checkout_wthree py-sm-5 py-3">
+    <div class="container">
+        <div class="check_w3ls">
+            <div class="d-sm-flex justify-content-between mb-4">
+                <h4>
+                    Kiểm tra giỏ hàng
+                </h4>
+                <h4 class="mt-sm-0 mt-3">
+                    Giỏ của bạn có :
+                    <span id="soluong"></span>
+                </h4>
+            </div>
+            <div style="display:flex" id="cartContent">
+                <div class="checkout-right">
+                    <table class="timetable_sub">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Sản Phẩm</th>
+                                <th>Số Lượng</th>
+                                <th>Tên Sản Phẩm</th>
+                                <th>Thành Tiền</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartBody"></tbody>
+                    </table>
+                </div>
+                <div class="col-md-4 checkout-right-basket" style="border:1px solid #eee; padding:4px;">
+                    <h4>Tổng kết Đặt Hàng</h4>
+                    <ul style="margin-top:5px;">
+                        <li>
+                            Tạm tính :
+                            <i>-</i>
+                            <span id="lblTotalOrder" style="float:right;"></span>
+                        </li>
+                        <li style="border-top: 2px solid #e54d42;">
+                            Tổng Tiền :
+                            <i>-</i>
+                            <span id="lblTotalOrder2" style=" color: #ee2347;font-size: 19px; float:right;"></span>
+
+                        </li>
+                        <li style="float:right"><i>(Chưa bao gồm phí vận chuyển)</i></li>
+
+                    </ul>
+                    <button class="btn btn-app" style="width: 100%;" id="btnContinue">Tiếp tục mua hàng</button>
+                    <button class="btn btn-danger" style="width: 100%;" id="btnDeleteAll">Xóa giỏ hàng</button>
+                    <button class="submit check_out" style="width: 100%;" id="btnCheckout">Đặt Hàng</button>
+                </div>
+
+            </div>
+
+            <div class="clearfix">   </div>
+            @*<div class="col-md-4 checkout-left-basket">
+            <h4>Continue to basket</h4>
+            <ul>
+                <li>
+                    Solid Men's Black Shirt
+                    <i>-</i>
+                    <span>$20.00 </span>
+                </li>
+                <li>
+                    Women's Light Blue Tunic
+                    <i>-</i>
+                    <span>$35.00 </span>
+                </li>
+                <li>
+                    Boy's Casual Shirt &amp; Trouser Set
+                    <i>-</i>
+                    <span>$23.00</span>
+                </li>
+                <li>
+                    Total
+                    <i>-</i>
+                    <span>$78.00</span>
+                </li>
+            </ul>
+        </div>*@
+            <div class="col-md-8 address_form" id="divCheckout" style="display:none;">
+                <h4>Thông Tin Nhận Hàng</h4>
+                <form action="payment.html" id="frmPayment" method="post" class="creditly-card-form shopf-sear-headinfo_form">
+                    <div class="creditly-wrapper wrapper">
+                        <div class="information-wrapper">
+                            <div class="first-row form-group">
+                                @if (Request.IsAuthenticated)
+                                {
+                                    <div class="controls">
+                                        <label>
+                                            <input type="checkbox" id="chkUserLoginInfo" />
+                                            Sử dụng thông tin đăng nhập
+                                        </label>
+                                    </div>
+                                }
+                                <div class="controls">
+                                    <label class="control-label">Họ Tên: </label>
+                                    <input class="billing-address-name form-control" id="txtName" type="text" name="name" placeholder="Full name">
+                                </div>
+                                <div class="card_number_grids">
+                                    <div class="card_number_grid_left">
+                                        <div class="controls">
+                                            <label class="control-label">Địa Chỉ:</label>
+                                            <input class="form-control" id="txtAddress" type="text" name="address" placeholder="Địa Chỉ">
+                                        </div>
+                                    </div>
+                                    <div class="card_number_grid_right">
+                                        <div class="controls">
+                                            <label class="control-label">Email: </label>
+                                            <input class="form-control" id="txtEmail" type="email" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="controls">
+                                    <label class="control-label">Điện Thoại</label>
+                                    <input class="form-control" id="txtPhone" type="number" name="phone" placeholder="Điện Thoại">
+                                </div>
+                                <div class="controls">
+                                    <label class="control-label">Message</label>
+                                    <textarea class="form-control" id="txtMessage"></textarea>
+                                </div>
+                            </div>
+                            <input type="button" class="check_out" id="btnCreateOrder" value="Thanh toán">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix">   </div>
+        </div>
+    </div>
+</section>
+
+<script id="tplCart" type="x-tmpl-mustache">
+    <tr class="rem1">
+        <td class="invert">{{ProductId}}</td>
+        <td class="invert-image" style="    width: 50%;">
+            <a href="single_product.html">
+                <img src="{{Image}}" alt=" " class="img-responsive">
+            </a>
+        </td>
+        <td class="invert">
+            <div class="quantity">
+                <div class="quantity-select">
+                    <input type="number" min="0" data-id="{{ProductId}}" data-price="{{Price}}" value="{{Quantity}}" class="input txtQuantity" style="width:50px" />
+                </div>
+            </div>
+        </td>
+        <td class="invert">{{ProductName}}</td>
+
+        <td class="invert" id="amount_{{ProductId}}">{{Amount}}</td>
+        <td class="invert">
+            <div class="rem">
+                <button class="btn btn-danger btnDeleteItem" data-id="{{ProductId}}"><i class="fa fa-close">X</i></button>
+            </div>
+
+        </td>
+    </tr>
+
+</script>
+<script id="tplCart2" type="x-tmpl-mustache">
+    {{sl}} sản phẩm
+</script>
+

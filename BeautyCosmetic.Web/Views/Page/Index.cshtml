@@ -1,0 +1,28 @@
+﻿@model BeautyCosmetic.Web.Models.PageViewModel
+    @{
+        ViewBag.Title = @Model.Name;
+        ViewBag.MetaKeyword = @Model.Name;
+        ViewBag.MetaDescription = Model.Name;
+        Layout = "~/Views/Shared/Layouts.cshtml";
+    }
+
+    <!-- inner banner -->
+    <div class="ibanner_w3 pt-sm-5 pt-3">
+    </div>
+    <!-- //inner banner -->
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Trang Chủ</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
+    <section class="wthree-row pt-3 pb-sm-5 w3-contact">
+        <div class="container py-sm-5 pb-5">
+            @Html.Raw(Model.Content)
+        </div>
+    </section>
+

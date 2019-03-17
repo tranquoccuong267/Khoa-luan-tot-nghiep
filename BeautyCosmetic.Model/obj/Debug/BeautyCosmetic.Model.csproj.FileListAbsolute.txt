@@ -1,0 +1,32 @@
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csproj.CoreCompileInputs.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csproj.CopyComplete
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\BeautyCosmetic.Model.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.csproj.CopyComplete
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Model\obj\Debug\BeautyCosmetic.Model.pdb

@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNet.Identity;
+<header>
+    <div class="container" style="padding-bottom: 10px; height: 100px;">
+        <!-- top nav -->
+        <nav class="top_nav d-flex pt-3 pb-1" style="height: 90px;border-bottom: 1px solid #eee;">
+            <!-- logo -->
+            <h1>
+                <a class="navbar-brand" href="/">
+                    <img src="~/Assets/client/images/logo.png" style="height:70px" />
+                </a>
+            </h1>
+            <!-- search form -->
+            <form class="nav-search form-inline my-0 form-control" action="/tim-kiem" method="get" style="max-width: fit-content;">
+                <input class="form-control input-lg" type="text" id="txtKeyword" name="keyword" placeholder="Tìm Kiếm" />
+
+                <button type="submit" disabled id="btnsearch" class="fas fa-search btn btn-outline-secondary  ml-3 my-sm-0"></button>
+            </form>
+            <!-- search form -->
+            <h1 style="    padding-left: 12%;"><img src="~/Assets/client/images/logo2.png" style=" width: 43%; margin-top: 10px;" /></h1>
+            <!-- //logo -->
+            <div class="w3ls_right_nav ml-auto d-flex">
+
+                <div class="nav-icon d-flex">
+                    <!-- sigin and sign up -->
+                    @using (Html.BeginForm("LogOut", "Account", FormMethod.Post, new { @id = "frmLogout",  style = "margin-top: 30px;display: flex;" }))
+                    {
+                    if (Request.IsAuthenticated)
+                    {
+                    @Html.AntiForgeryToken()
+                    <ul class="text-dark login_btn align-self-center mx-3" style="display: -webkit-inline-box;margin-right: 60px !important;">
+                        <li style="margin-right:5px;"><a href="/tai-khoan_html"><span class="fa fa-user" style="margin-right:5px;"></span>@User.Identity.GetUserName()</a></li>  |
+                        <li><a href="#" style="margin-left:9px;" id="btnLogout">Đăng xuất</a></li>
+                    </ul>
+                    }
+                    else
+                    {
+                    <a class="text-dark login_btn align-self-center mx-3" href="/dang-nhap_html">
+                        <i class="far fa-user" style="color:#00a65a"></i>
+                    </a>
+                    }
+                    }
+
+
+                    <!-- sigin and sign up -->
+                    <!-- shopping cart /gio-hang.html -->
+                    <div class="cart-mainf" style="margin-bottom: 2rem;">
+                        <div class="hubcart hubcart2 cart cart box_1">                            
+                                <a class="btn mt-1"  href="/gio-hang_html" role="button" style="margin-top:34px!important; background-color: #b0f9b6;">
+                                    <i class="fas fa-shopping-bag" style="color:#00a65a;"></i>
+                                </a>
+
+                        </div>
+                    </div>
+                    <!-- //shopping cart ends here -->
+                </div>
+            </div>
+        </nav>
+        <!-- //top nav -->
+    </div>
+    <!-- //header container -->
+</header>

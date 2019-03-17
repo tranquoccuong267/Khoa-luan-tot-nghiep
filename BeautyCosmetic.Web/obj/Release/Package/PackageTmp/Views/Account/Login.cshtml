@@ -1,0 +1,54 @@
+﻿@model BeautyCosmetic.Web.Models.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang Chủ</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Đăng nhập</li>
+    </ol>
+</nav>
+<div>
+    <div class="agilemodal-dialog modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="margin: 0 auto;">
+                <h5 class="modal-title" id="exampleModalLabel">Đăng Nhập</h5>
+            </div>
+            <div class="modal-body  pt-3 pb-5 px-sm-5">
+                <div class="row">
+                    @*<div class="col-md-6 align-self-center">
+                            <img src="~/Assets/client/images/p3.png" class="img-fluid" alt="login_image" />
+                        </div>*@
+                    <div class="col-md-6" style="margin: 0 auto; margin-top:10px;">
+                        @using (Html.BeginForm("Login", "Account", new { returnUrl = @ViewBag.ReturnUrl }, FormMethod.Post))
+                        {
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">User Name<span style="color: red;"> (*)</span></label>
+                                @Html.TextBoxFor(model => model.UserName, new { style = "width: 77%;" })
+                            </div>
+                            <div class="form-group">
+                                <label class="col-form-label">Password<span style="color: red;"> (*)</span></label>
+                                @Html.PasswordFor(model => model.Password, new { style = " margin-left: 9px; width: 77%;" })
+                            </div>
+                            <div style="width: 77%;margin: 0 auto;">
+                                @Html.CheckBoxFor(model => model.RememberMe)
+                                Nhớ mật khẩu
+                                <a class="forgot" style="float:right" href="#">Quên mật khẩu</a>
+                            </div>
+
+                            <div class="right-w3l">
+                                <input type="submit" style="margin-top:20px" class="form-control" value="Đăng Nhập">
+                            </div>
+                        }
+                        <p style="text-align: center; font-size: 12px;"><i class="fa fa-user"></i> Bạn chưa có tài khoản<a href="/dang-ky_html" style="color: #00b7f1;" title="t?o tài kho?n"> Đăng ký</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

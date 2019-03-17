@@ -1,0 +1,336 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    @*Beauty Cosmetic| Home :: TQC*@
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.MetaKeyword">
+    <meta name="keywords" content="@ViewBag.MetaDescription">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="~/Assets/client/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- shop css -->
+    <link href="~/Assets/client/css/shop.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/Assets/client/css/flexslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Assets/client/css/owl.carousel.min.css">
+    <!-- Owl-Carousel-CSS -->
+    <link href="~/Assets/client/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="~/Assets/client/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="~/Assets/admin/libs/jqueri-ui/themes/smoothness/jquery-ui.min.css" rel="stylesheet" />
+    @*<link href="~/Assets/signup/css/style.css" rel="stylesheet" />*@
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="//fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="~/Assets/client/images/favicon.png" />
+    @RenderSection("loginCSS", required: false)
+    <!-- //online-fonts -->
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        #pabtigatiuon {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+            #pabtigatiuon:hover {
+                background-color: #a4a6a8;
+            }
+
+        #categoryfont {
+            max-width: fit-content;
+            margin: 0 0 -1px;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0 12px;
+            line-height: 32px;
+            border-bottom: 3px solid #1f601f;
+        }
+
+        .nav-link:hover {
+            background-color: #00a65a;
+        }
+    </style>
+</head>
+
+<body >
+    <!-- header -->
+    @{ Html.RenderAction("Header", "Home");}
+    <!-- //header -->
+    <!--Category-->
+    @{ Html.RenderAction("Category", "Home");}
+    <!--//Category-->
+    <!-- banner -->
+    <div style="padding-left:50px;padding-right:50px;">
+        @RenderBody()
+    </div>
+
+    <!-- footer -->
+    @{ Html.RenderAction("Footer", "Home");}
+    <!-- //footer -->
+    <!-- sign up Modal -->
+    <div class="loginform">
+        <!-- css -->
+        <!-- //css -->
+        <!-- sign up Modal -->
+        <!-- signin Modal -->
+        <!-- js -->
+        <script src="~/Assets/client/js/jquery-2.2.3.min.js"></script>
+        <script src="~/Assets/admin/libs/jqueri-ui/jquery-ui.min.js"></script>
+        <script src="~/Assets/admin/libs/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="~/Assets/admin/libs/mustache/mustache.js"></script>
+        <script src="~/Assets/admin/libs/numeral/numeral.js"></script>
+        <!-- //js -->
+        <script>
+            $(document).ready(function () {
+                $(".block-content2").hide();
+                $(".block-title-tool").click(function () {
+                    if ($(".block-content2").is(":hidden")) {
+                        $(".block-content2").show();
+                    } else {
+                        $(".block-content2").hide();
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#txtKeyword").change(function () {
+                    if ($("#txtKeyword").val() != "") {
+                        $("#btnsearch").removeAttr('disabled');
+                    }
+
+                });
+            });
+        </script>
+        <!-- script for show signin and signup modal -->
+        <script>
+            $(document).ready(function () {
+                $("#myModal_btn").modal();
+            });
+        </script>
+        <!-- //script for show signin and signup modal -->
+        <!-- smooth dropdown -->
+        <script>
+            $(document).ready(function () {
+                $('ul li.dropdown').hover(function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+                }, function () {
+                    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+                });
+            });
+        </script>
+
+        <!-- //smooth dropdown -->
+        <!-- script for password match -->
+        <script>
+            window.onscroll = function () { myFunction(), myFunction2() };
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                    document.getElementById("minicart").style.visibility = "visible";
+                    document.getElementById("search").style.visibility = "visible";
+
+                } else {
+                    document.getElementById("minicart").style.visibility = "hidden";
+                    document.getElementById("search").style.visibility = "hidden";
+                    navbar.classList.remove("sticky");
+
+                }
+            }
+        </script>
+        <script>
+            window.onload = function () {
+                document.getElementById("password1").onchange = validatePassword;
+                document.getElementById("password2").onchange = validatePassword;
+            }
+
+            function validatePassword() {
+                var pass2 = document.getElementById("password2").value;
+                var pass1 = document.getElementById("password1").value;
+                if (pass1 != pass2)
+                    document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+                else
+                    document.getElementById("password2").setCustomValidity('');
+                //empty string means no validation error
+            }
+        </script>
+        <!-- script for password match -->
+        <!-- Banner Responsiveslides -->
+        <script src="~/Assets/client/js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+                // Slideshow 4
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+
+        <!-- // Banner Responsiveslides -->
+        <!-- Product slider Owl-Carousel-JavaScript -->
+        <script src="~/Assets/client/js/owl.carousel.js"></script>
+        <script>
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    320: {
+                        items: 1,
+                    },
+                    568: {
+                        items: 2,
+                    },
+                    991: {
+                        items: 3,
+                    },
+                    1050: {
+                        items: 4
+                    }
+                }
+            });
+        </script>
+        <!-- //Product slider Owl-Carousel-JavaScript -->
+        <!--//productdetailJs-->
+        <script src="~/Assets/client/js/jquery.flexslider.js"></script>
+        <script>
+            // Can also be used with $(document).ready()
+            $(window).load(function () {
+                $('.flexslider1').flexslider({
+                    animation: "slide",
+                    controlNav: "thumbnails"
+                });
+            });
+        </script>
+        <!-- //FlexSlider-->
+        <!-- zoom -->
+        <script src="~/Assets/client/js/imagezoom.js"></script>
+        <!-- zoom -->
+        <!--//productdetailJs-->
+        <!-- cart-js -->
+        <script src="~/Assets/client/js/minicart.js">
+        </script>
+        <script>
+            hub.render();
+
+            hub.cart.on('new_checkout', function (evt) {
+                var items, len, i;
+
+                if (this.subtotal() > 0) {
+                    items = this.items();
+
+                    for (i = 0, len = items.length; i < len; i++) { }
+                }
+            });
+        </script>
+        <!-- //cart-js -->
+        <!-- start-smooth-scrolling -->
+        <script>
+
+            var header = document.getElementById("lol");
+            var sticky2 = header.offsetTop;
+
+            var stopheader = document.getElementById("stopheader");
+            function myFunction2() {
+                if (window.pageYOffset > sticky2 && window.pageYOffset <= (stopheader.offsetTop - 380)) {
+
+                    header.classList.add("sticky2");
+                } else {
+                    header.classList.remove("sticky2");
+                }
+            }
+        </script>
+        <script src="~/Assets/client/js/move-top.js"></script>
+        <script src="~/Assets/client/js/easing.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 1000);
+                });
+            });
+        </script>
+        <!-- //end-smooth-scrolling -->
+        <!-- smooth-scrolling-of-move-up -->
+        <script>
+            $(document).ready(function () {
+                /*
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                };
+                */
+
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+
+            });
+        </script>
+
+
+        <script src="~/Assets/client/js/common.js"></script>
+        <script src="~/Assets/signup/js/index.js"></script>
+        <script src="~/Assets/client/js/SmoothScroll.min.js"></script>
+        <!-- //smooth-scrolling-of-move-up -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="~/Assets/client/js/bootstrap.js"></script>
+        @RenderSection("footerJS", required: false)
+</body>
+
+</html>

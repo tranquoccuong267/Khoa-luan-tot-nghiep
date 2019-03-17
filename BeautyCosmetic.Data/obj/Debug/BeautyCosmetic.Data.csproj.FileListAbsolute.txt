@@ -1,0 +1,70 @@
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Common.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Common.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csprojAssemblyReference.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.CoreCompileInputs.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.CopyComplete
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.pdb
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.InitialDB.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.GenerateResource.cache
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddErrorTable.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.IntergrateAspnetIdentity.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddTagField.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddContentToSlide.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddMoreQuantitty.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.addforeignkey.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.ContactDetail.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.ModifyString.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.Feedback.resources
+E:\Full\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddCustomerId.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Data.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Common.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\BeautyCosmetic.Model.dll.config
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.InitialDB.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddErrorTable.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.IntergrateAspnetIdentity.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddTagField.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddContentToSlide.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddMoreQuantitty.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.addforeignkey.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.ContactDetail.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.ModifyString.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.Feedback.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddCustomerId.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.GenerateResource.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.csproj.CopyComplete
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.RenameTableIdentity.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.AddGroupUser.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.ChangeOrderDetail.resources
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Data\obj\Debug\BeautyCosmetic.Data.Migrations.RevenuesStatisticSP.resources

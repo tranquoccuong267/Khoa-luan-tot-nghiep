@@ -1,0 +1,26 @@
+﻿@model BeautyCosmetic.Web.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+
+
+<hr />
+<p style="text-align: center;margin-bottom:10px; line-height: 20px; margin: 0;padding: 0;border: 0;outline: 0;vertical-align: baseline;">hoặc đăng nhập bằng<p>
+<hr />
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+    if (loginProviders.Any())
+    {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl }))
+        {
+            @Html.AntiForgeryToken()
+            <div id="socialLoginList">
+                <p style="display:flex;">
+                    @foreach (AuthenticationDescription p in loginProviders)
+                    {
+                        <button type="submit" style="margin:0 auto; width:250px; color:#fff;@(p.AuthenticationType == "Google" ? "background-color:#d62d20;" : "background-color:#3b5998;")" class="btn" id="@p.AuthenticationType" name="provider" value="@p.AuthenticationType" title="Log in using your @p.Caption account"><i class="fab fa-@p.AuthenticationType.ToLower()" style="margin-left:10px;"></i> @p.AuthenticationType</button>
+                    }
+                </p>
+            </div>
+        }
+    }
+
+}

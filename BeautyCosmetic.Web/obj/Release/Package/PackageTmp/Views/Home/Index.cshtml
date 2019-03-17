@@ -1,0 +1,368 @@
+﻿@model BeautyCosmetic.Web.Models.HomeViewModel
+@{
+    ViewBag.Title = Model.Title;
+    ViewBag.MetaKeyword = Model.MetaKeyword;
+    ViewBag.MetaDescription = Model.MetaDescription;
+    Layout = "~/Views/Shared/Layouts.cshtml";
+}
+
+
+<div class="banner-text">
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            @foreach (var slide in Model.Slides)
+            {
+                <li class="banner" style="background: url(@slide.Image) no-repeat; background-size:cover;">
+                    <div class="container">
+                        @Html.Raw(slide.Content)
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+<div class="clearfix"></div>
+<!-- //banner -->
+<!--services-->
+<div class="agileits-services" id="services">
+    <div class="no-gutters agileits-services-row row">
+        <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+            <span class="fas fa-sync-alt p-4" style="color:#00a65a"></span>
+            <h4 class="mt-2 mb-3">5 Ngày Đổi Trả</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+            <span class="fas fa-gift p-4" style="color:#00a65a"></span>
+            <h4 class="mt-2 mb-3">Phần Quà</h4>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+            <span class="fas fa-lock p-4" style="color:#00a65a"></span>
+            <h4 class="mt-2 mb-3">Thanh Toán An Toàn</h4>
+        </div>
+        <div class="col-lg-3 col-sm-6 agileits-services-grids p-sm-5 p-3">
+            <span class="fas fa-shipping-fast p-4" style="color:#00a65a"></span>
+            <h4 class="mt-2 mb-3">Giao Hàng Miễn Phí</h4>
+        </div>
+    </div>
+</div>
+<!-- //services-->
+<!-- about -->
+<div class="row no-gutters pb-5">
+    @foreach (var category in Model.HeadProductCategory.Where(x => x.ParentID == null))
+    {
+        <div class="col-sm-4">
+            <div class="hovereffect">
+                <img class="img-fluid" src="@category.Image" alt="">
+                <div class="overlay">
+                    <h5>@category.Name</h5>
+                    <a class="info" href="women.html">mua ngay</a>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+<!-- //about -->
+<!-- product tabs -->
+<section class="tabs_pro py-md-5 pt-sm-3 pb-5">
+    <h5 class="head_agileinfo text-center text-capitalize pb-5">
+        Sản Phẩm <span>Hot</span>
+    </h5>s
+    <div class="tabs tabs-style-line pt-md-5">
+        <nav class="container">
+            <ul id="clothing-nav" class="nav nav-tabs tabs-style-line" role="tablist">
+                @foreach (var category in Model.HeadProductCategory.Where(x => x.ParentID == null))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link@(category.ID == 2 ? " active" : "")" href="#@category.ID" id="@category.Alias" role="tab" data-toggle="tab" aria-controls="@category.ID">@category.Name</a>
+                    </li>
+
+                }
+            </ul>
+        </nav>
+
+
+        <!-- Content Panel -->
+
+        <div id="clothing-nav-content" class="tab-content py-sm-5">
+            @foreach (var category in Model.HeadProductCategory.Where(x => x.ParentID == null))
+            {
+                <div role="tabpanel" class="tab-pane fade@(category.ID == 2 ? " active show" : "") " id="@category.ID" aria-labelledby="@category.Alias">
+                    <div id="owl-demo" class="owl-carousel text-center">
+                        @foreach (var product in Model.LastestProducts.Where(x => x.CategoryID == category.ID))
+                        {
+                            var url = "/" + product.Alias + "_p-" + product.ID;
+                            <div class="item">
+                                <!-- card -->
+                                <div class="card product-men p-3">
+                                    <div class="men-thumb-item">
+                                        <img src="@product.Image" style="height:200px;" alt="img" class="card-img-top">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                @*//mua hay chi xem id="btnAddToCart" data-id="@product.ID" *@
+                                                <a href="@url" class="link-product-add-cart">Xem Ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card body -->
+                                    <div class="card-body  py-3 px-2">
+                                        <h5 class="card-title text-capitalize" style="height:100px;">@product.Name</h5>
+                                        <div class="card-text d-flex justify-content-between">
+                                            <p class="text-dark font-weight-bold" style="color:#00a65a!important">@product.PromotionPrice.Value.ToString("N0")₫</p>
+                                            <p class="line-through">@product.Price.ToString("N0")</p>
+                                        </div>
+                                    </div>
+                                    <!-- card footer -->
+                                    <div class="card-footer d-flex justify-content-end">
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="hub_item" value="@product.Price.ToString("N0")">
+                                            <input type="hidden" name="amount" value="@product.PromotionPrice.Value.ToString("N0")₫">
+                                            <button type="submit" data-id="@product.ID" class="hub-cart phub-cart btn btnAddToCart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                            <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- //card -->
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+<!-- //product tabs -->
+<!-- post tabs -->
+<section class="tabs_pro py-md-5 pt-sm-3 pb-5">
+    <div style="border-bottom: 1px solid #eee;"><h1 id="categoryfont" style="margin: 0 auto;">TIN TỨC NỔI BẬT</h1></div>
+    <div class="tabs tabs-style-line pt-md-5">
+
+
+        <!-- Content Panel -->
+
+        <div id="clothing-nav-content" class="tab-content py-sm-5">
+            @foreach (var category in Model.HeadProductCategory.Where(x => x.ParentID == null))
+            {
+                <div role="tabpanel" class="tab-pane fade@(category.ID == 2 ? " active show" : "") " id="@category.ID" aria-labelledby="@category.Alias">
+                    <div id="owl-demo" class="owl-carousel text-center">
+                        @foreach (var product in Model.LastestProducts.Where(x => x.CategoryID == category.ID))
+                        {
+                            var url = "/" + product.Alias + "_p-" + product.ID;
+                            <div class="item">
+                                <!-- card -->
+                                <div class="card product-men p-3">
+                                    <div class="men-thumb-item">
+                                        <img   src="@product.Image" alt="img" class="card-img-top">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="@url" class="link-product-add-cart">Xem Ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card body -->
+                                    <div class="card-body  py-3 px-2">
+                                        <h5 class="card-title text-capitalize">@product.Name</h5>
+                                        <div class="card-text d-flex justify-content-between">
+                                            <p class="text-dark font-weight-bold">@product.PromotionPrice</p>
+                                            <p class="line-through">@product.Price</p>
+                                        </div>
+                                    </div>
+                                    <!-- card footer -->
+                                    <div class="card-footer d-flex justify-content-end">
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="hub_item" value="@product.Name">
+                                            <input type="hidden" name="amount" value="@product.PromotionPrice">
+                                            <button type="submit" class="hub-cart phub-cart btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                            <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- //card -->
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
+<!-- //post tabs -->
+<!-- insta posts -->
+<section class="py-lg-5">
+    <!-- insta posts -->
+    <div style="border-bottom: 1px solid #eee;"><h1 id="categoryfont" style="margin: 0 auto;">THƯƠNG HIỆU NỔI BẬT</h1></div>
+    <div class="tabs tabs-style-line pt-md-5">
+        <div class="gallery row no-gutters pt-lg-5" style="margin-bottom: 10px;">
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th1.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 56
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th2.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 89
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 5
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th3.jpg" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 42
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 1
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th4.jpg" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th5.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th6.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="gallery row no-gutters pb-5" style="margin-top:20px;">
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th7.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 56
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th8.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 89
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 5
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th9.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 42
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 1
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th10.png" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img src="~/Assets/client/images/Brand/th11.jpg" class="img-fluid" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4 col-6 gallery-item">
+                <img class="img-fluid" src="~/Assets/client/images/Brand/th12.png" alt="" style="height: 100px;width: 137px; margin-left: 20px;" />
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes">
+                            <i class="fas fa-heart"></i> 38
+                        </li>
+                        <li class="gallery-item-comments">
+                            <i class="fas fa-comment"></i> 0
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //insta posts -->

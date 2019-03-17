@@ -1,0 +1,349 @@
+﻿@model BeautyCosmetic.Web.Models.ProductViewModel
+
+@{
+    ViewBag.Title = "Detail";
+    ViewBag.MetaKeyword = Model.MetaKeyword;
+    ViewBag.MetaDescription = Model.MetaDescription;
+    Layout = "~/Views/Shared/Layouts.cshtml";
+    var category = (BeautyCosmetic.Web.Models.ProductCategoryViewModel)ViewBag.Category;
+    var url2 = "/" + category.Alias + "_pc-" + category.ID;
+}
+<style>
+    .sticky2 {
+        position: fixed;
+        top: 14px;
+        right: 50px;
+        width: 20%;
+        z-index: 9999 !important;
+    }
+
+    .theH2 {
+        font-size: 17px;
+        color: #1f601f;
+        margin-top: 0 !important;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: -1px;
+        border-bottom: 0;
+        background-color: #fff !important;
+    }
+
+    .theh1 {
+        z-index: 100;
+        float: left;
+        position: absolute;
+        display: block;
+        padding: 10px 15px;
+        border-top: 1px solid #eee;
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #fff;
+    }
+
+    .theH {
+        float: left;
+    }
+</style>
+<!-- inner banner -->
+<div class="ibanner_w3 pt-sm-5 pt-3">
+</div>
+<!-- //inner banner -->
+<!-- breadcrumbs -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">Trang Chủ</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="@url2">@category.Name</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.Name</li>
+    </ol>
+</nav>
+<!-- //breadcrumbs -->
+<!-- Single -->
+<div class="innerf-pages section py-5" style="padding-top: 0rem !important;">
+    <div class="container">
+        <div class="row my-sm-5" style="width:75%;display: inline-flex;">
+            <div class="col-lg-4 single-right-left">
+                <div class="grid images_3_of_2">
+                    <div class="flexslider1">
+                        <ul class="slides">
+                            <li data-thumb="@Model.Image">
+                                <div class="thumb-image">
+                                    <img src="@Model.Image" data-imagezoom="true" alt=" " class="img-fluid">
+                                </div>
+                            </li>
+                            @{
+                                var moreImages = (List<string>)ViewBag.MoreImages;
+                                if (moreImages.Count > 0)
+                                {
+                                    foreach (var image in moreImages)
+                                    {
+                                        <li data-thumb="@image">
+                                            <div class="thumb-image">
+                                                <img src="@image" data-imagezoom="true" alt=" " class="img-fluid">
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                            }
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 mt-lg-0 mt-5 single-right-left simpleCart_shelfItem">
+                <h3>@Model.Name</h3>
+                <div class="caption">
+
+                    <ul class="rating-single">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-star yellow-star" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-star yellow-star" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+
+
+                            <a href="#">
+                                <span class="fa fa-star yellow-star" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-star yellow-star" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-star yellow-star" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                    @if (Model.PromotionPrice != null)
+                    {
+                        var du = @Model.Price - Model.PromotionPrice.Value;
+                        var percent = du / Model.Price * 100;
+                        <h6 style="color:#00a65a">
+                            @Model.PromotionPrice.Value.ToString("N0") ₫
+                        </h6>
+                        <div class="product-condition product-condition-custom">
+                            Giá thị trường: <span>
+                                @Model.Price.ToString("N0") ₫
+
+                                - Tiết kiệm: @du.ToString("N0")₫   (<span class="phantramgiathitruong">-@percent.ToString("N0")%</span>)
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <h6 style="color:#00a65a">
+                            @Model.Price.ToString("N0") ₫
+                        </h6>
+                    }
+
+                </div>
+                <div class="desc_single">
+                    <h5>Mô tả</h5>
+                    <p>
+                        @Html.Raw(Model.Description)
+                    </p>
+                </div>
+                @*<div class="d-sm-flex justify-content-between">
+                        <div class="occasional">
+                            <h5 class="sp_title mb-3">Điểm nổi bật</h5>
+                            <ul class="single_specific">
+                                <li>
+                                    <span>Xuất xứ: </span> Poly-Viscose
+                                </li>
+                                <li>
+                                    <span>Thương hiệu :</span> Solid
+                                </li>
+                                <li>
+                                    <span>Type :</span> Single Breasted
+                                </li>
+                                <li>
+                                    <span>Fit :</span> Slim
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>*@
+                <div class="description">
+                    <h5>Tags :</h5>
+                    <ul class="w3-tag2">
+                        @foreach (var tag in (IEnumerable<BeautyCosmetic.Web.Models.TagViewModel>)ViewBag.Tags)
+                        {
+                            <li>
+                                <a href="/tag/@(tag.ID)_html">@tag.Name</a>
+                            </li>
+                        }
+                    </ul>
+
+
+                </div>
+
+                <div class="occasion-cart">
+                    <div class="chr single-item single_page_b">
+                        <form action="#" method="post">
+                            <input type="hidden" name="cmd" value="_cart">
+                            <input type="hidden" name="add" value="1">
+                            <input type="hidden" name="hub_item" value="@Model.Name">
+                            <input type="hidden" name="amount" value="@Model.PromotionPrice">
+                            <span>Thêm Vào Giỏ</span><button type="submit" data-id="@Model.ID" class="hub-cart phub-cart btn btnAddToCart" style="margin-left:20px">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                            </button>
+                            <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="product-info-detailed hidden-xs hidden-sm" style="margin-top:20px;">
+                <ul class="nav nav-pills " id="lbthongtin" role="tablist">
+                    <li role="presentation" class="theH active"><a href="#description" class="theh1" role="tab" data-toggle="tab" title="tab"><h2 class="theH2">Thông tin @Model.Name</h2></a></li>
+                </ul>
+                <div id="thongtin" style=" border:1px solid #eee; margin-top:40px; padding:10px;">
+                    @Html.Raw(Model.Content)
+                </div>
+
+            </div>
+
+        </div>
+        <div class="block-sidebar block-sidebar-products" id="lol" style="width:25%;border: 1px solid #f1f1f1; float:right ;margin-top:3.5rem;">
+            <div class="block-title" style=" padding: 10px; border: 1px solid #f1f1f1;">
+
+                <strong style="margin: auto;font-size: 15px;text-align: center;color: #1f601f!important; display: inherit;">-- CHẤT LƯỢNG CHO TẤT CẢ --</strong>
+            </div>
+            <div class="block-content block_content_tichdiem" style="width: 70%; padding: 10px;">
+                <div class="product-item product-item-opt-1">
+                    <div class="product-item-info" style="display: -webkit-inline-box;">
+                        <div class="product-item-photo tichdiem_img">
+                            <img alt="mỹ phẩm 100% chính hãng" data-src="/Upload/files/chinh-sach-04.png" style="max-width: 80px; max-height: 90px;" class="lazy-loaded" src="~/Assets/client/images/policy/chinh-sach-04.png">
+                        </div>
+                        <div class="product-item-detail chitiet_tichdiem" style="font-size: 13px; margin-bottom:5px; ">
+                            <strong class="product-item-name tichdiem" style="text-transform:uppercase; color: #1f601f!important;">Mỹ phẩm 100% chính hãng </strong>
+                            <div class="clearfix">
+                                <span class="ten_tichdiem" style="font-size: 11px;">Chất lượng sản phẩm luôn được chứng nhận bằng sự tin cậy của Khách Hàng suốt nhiều năm qua</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item product-item-opt-1">
+                    <div class="product-item-info" style="display: -webkit-inline-box;">
+                        <div class="product-item-photo tichdiem_img">
+                            <img alt="luôn được tích điểm" data-src="/Upload/files/chinh-sach-05.png" style="max-width: 80px; max-height: 90px;" class="lazy-loaded" src="~/Assets/client/images/policy/chinh-sach-05.png">
+                        </div>
+                        <div class="product-item-detail chitiet_tichdiem" style="font-size: 13px; margin-bottom:5px;">
+                            <strong class="product-item-name tichdiem" style="text-transform:uppercase;color: #1f601f!important;">Tri ân khách hàng</strong>
+                            <div class="clearfix">
+                                <span class="ten_tichdiem" style="font-size: 11px;">Với các chương trình khuyến mãi, các sự kiện &amp; quà tặng đặc biệt vô cùng hấp dẫn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item product-item-opt-1">
+                    <div class="product-item-info" style="display: -webkit-inline-box;">
+                        <div class="product-item-photo tichdiem_img">
+                            <img alt="Miễn phí giao hàng" data-src="/Upload/files/chinh-sach-06.png" style="max-width: 80px; max-height: 90px;" class="lazy-loaded" src="~/Assets/client/images/policy/chinh-sach-06.png">
+                        </div>
+                        <div class="product-item-detail chitiet_tichdiem" style="font-size: 13px; margin-bottom:5px;">
+                            <strong class="product-item-name tichdiem" style="text-transform:uppercase;color: #1f601f!important;">Miễn phí giao hàng</strong>
+                            <div class="clearfix">
+                                <span class="ten_tichdiem" style="font-size: 11px;">Đơn hàng trên 200k nội thành HCM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item product-item-opt-1">
+                    <div class="product-item-info" style="display: -webkit-inline-box;">
+                        <div class="product-item-photo tichdiem_img">
+                            <img alt="Tri ân khách hàng" data-src="/Upload/files/chinh-sach-07.png" style="max-width: 80px; max-height: 90px;" class="lazy-loaded" src="~/Assets/client/images/policy/chinh-sach-07.png">
+                        </div>
+                        <div class="product-item-detail chitiet_tichdiem" style="font-size: 13px;">
+                            <strong class="product-item-name tichdiem" style="text-transform:uppercase;color: #1f601f!important;">5 ngày đổi trả</strong>
+                            <div class="clearfix">
+                                <span class="ten_tichdiem" style="font-size: 11px;">Với các chương trình khuyến mãi, các sự kiện &amp; quà tặng đặc biệt vô cùng hấp dẫn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+<!-- /new_arrivals -->
+<div class="section singlep_btm pb-5" id="stopheader">
+    <div class="container">
+        <div class="new_arrivals">
+            <h4 class="rad-txt text-capitalize">
+                Sản phẩm liên quan
+            </h4>
+            <!-- card group 2 -->
+            @{
+                var relatedProducts = (IEnumerable<BeautyCosmetic.Web.Models.ProductViewModel>)ViewBag.RelatedProducts;
+            }
+            <div id="clothing-nav-content" class="tab-content py-sm-5">
+
+
+                <div role="tabpanel" class="tab-pane fade active show">
+                    <div id="owl-demo" class="owl-carousel text-center">
+                        @foreach (var product in relatedProducts)
+                        {
+                            var url = "/" + product.Alias + "_p-" + product.ID;
+                            <div class="item">
+                                <!-- card -->
+                                <div class="card product-men p-3">
+                                    <div class="men-thumb-item">
+                                        <img src="@product.Image" alt="img" class="card-img-top">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="@url" class="link-product-add-cart">Xem Ngay</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card body -->
+                                    <div class="card-body  py-3 px-2">
+                                        <h5 class="card-title text-capitalize">@product.Name</h5>
+                                        <div class="card-text d-flex justify-content-between">
+                                            <p class="text-dark font-weight-bold">@product.PromotionPrice.Value.ToString("N0")</p>
+                                            <p class="line-through">@product.Price.ToString("N0")</p>
+                                        </div>
+                                    </div>
+                                    <!-- card footer -->
+                                    <div class="card-footer d-flex justify-content-end">
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart">
+                                            <input type="hidden" name="add" value="1">
+                                            <input type="hidden" name="hub_item" value="@product.Name">
+                                            <input type="hidden" name="amount" value="@product.PromotionPrice.Value.ToString("N0")">
+                                            <button type="submit" class="hub-cart phub-cart btn">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                            </button>
+                                            <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- //card -->
+                            </div>
+                        }
+                    </div>
+                </div>
+
+            </div>
+            <!-- //card group -->
+            <!--//new_arrivals-->
+        </div>
+    </div>
+</div>
+<!--// Single -->

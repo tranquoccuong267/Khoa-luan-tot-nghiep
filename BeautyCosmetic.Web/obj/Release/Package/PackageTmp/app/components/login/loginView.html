@@ -1,0 +1,30 @@
+﻿    <div class="login-box">
+        <div class="login-logo" style="font-weight:100">
+            <a href="#" style="color:#fff"><b style="font-weight:800;color:#fff">Beauty</b>Cosmetic</a>
+        </div><!-- /.login-logo -->
+        <div class="login-box-body">
+            <p class="login-box-msg" style=" color:#fff; font-size:20px;">Đăng nhập hệ thống</p>
+            <form role="form" method="post" ng-submit="loginSubmit()">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Tài khoản" ng-model="loginData.userName">
+                    <span class="fa fa-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" ng-model="loginData.password" placeholder="Mật khẩu">
+                    <span class="fa fa-key form-control-feedback"></span>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck" style="margin-left:20px;color:#fff">
+                            <label>
+                                <input type="checkbox"> Nhớ mật khẩu
+                            </label>
+                        </div>
+                    </div><!-- /.col -->
+                    <div class="col-xs-4">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat" style="padding: 7px;">Đăng nhập</button>
+                    </div><!-- /.col -->
+                </div>
+            </form>
+        </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->

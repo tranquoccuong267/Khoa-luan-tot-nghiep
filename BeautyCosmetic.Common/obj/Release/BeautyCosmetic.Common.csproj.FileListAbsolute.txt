@@ -1,0 +1,6 @@
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\bin\Release\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\bin\Release\BeautyCosmetic.Common.pdb
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Release\BeautyCosmetic.Common.csprojAssemblyReference.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Release\BeautyCosmetic.Common.csproj.CoreCompileInputs.cache
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Release\BeautyCosmetic.Common.dll
+E:\New folder\BeautyCosmetic\BeautyCosmetic.Common\obj\Release\BeautyCosmetic.Common.pdb
